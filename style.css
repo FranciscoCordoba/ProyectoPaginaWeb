@@ -4,13 +4,14 @@ body{
     background-image: url(fondo.webp);
     background-repeat: repeat;
 }
-a{
+#movil a, footer a{
     text-decoration: none;
     color: white;
 }
+
 header{
     display: flex;
-    background-color: rgb(7, 8, 24);
+    background-color: rgba(7, 8, 24, 0.9);
     padding: 1rem;
     justify-content:space-between;
     align-items: center;
@@ -46,7 +47,7 @@ header h2{
     color: aliceblue;
 }
 
-ul{
+ul, li{
     list-style-type: none;
     margin: 0px;
     display: flex;
@@ -68,11 +69,9 @@ li{
 article{
     opacity: 85%;
     background-color: beige;
-    display: flex;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
-    align-items: center;
 }
 
 article:hover{
@@ -85,6 +84,13 @@ article img{
     height: 150px;
 }
 
+article a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
 .contenido{
     margin: 1rem;
 }
@@ -93,12 +99,11 @@ article img{
     color:aliceblue;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 1rem;
-    margin-top: 1rem;
-    margin-right: 0.3rem;
+    margin: 1rem 0.3rem 1rem;
 }
 
 .video{
-    margin: 2rem;
+    margin: 1rem;
 }
 
 #contenidoPagina{
