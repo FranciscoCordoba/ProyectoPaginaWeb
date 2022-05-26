@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script languaje="JavaScript" src="codigo.js"></script>
     <title>Blog by Daylight</title>
 </head>
 <body>
@@ -37,7 +38,7 @@
             <article id="killers">
                 <a href="killers.html">
                     <div class="imagen_articulo">
-                        <img src="killer.jpg">
+                        <img src="killer.jpg" name="Killer">
                     </div>
                     <div class="contenido">
                         <h3>Los mejores killers de Dead by Daylight</h3>
@@ -48,6 +49,9 @@
                     </div>
                 </a>
             </article>
+            <form method="post">
+                <button type="button" onclick="siguiente()">Siguiente Imagen</button>
+            </form>
             <article id="survis">
                 <a href="">
                     <div class="imagen_articulo">
