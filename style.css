@@ -147,8 +147,13 @@ article a{
 .videos{
     color:aliceblue;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 1rem 0.3rem 1rem;
+}
+
+.videos p{
+    padding: 1rem;
+    text-align: center;
 }
 
 .video{
@@ -161,7 +166,15 @@ article a{
 
 footer{
     background-color: black;
-    padding: 3rem;
-    color: aliceblue;
+    padding: 1rem;
 }
 
+footer p{
+    text-align: center;
+    color: rgb(180, 180, 180);
+}
+
+footer a{
+    text-decoration: none;
+    color: aliceblue;
+}
