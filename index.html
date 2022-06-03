@@ -16,26 +16,21 @@
         </div>
         <h2>Web blog de Dead by Daylight</h2>
     </header>
-    <div id="movil">
-        <ul>
-            <li>
-                <a href="index.html">Blog by Daylight</a>
-            </li>
-            <li id="lista">
-                <ul>
-                    <li><a href="">Artículos</a></li>
-                    <li><a href="">Mejores killers</a></li>
-                    <li><a href="">Mejores survis</a></li>
+    <nav>
+        <ul id="movil">
+            <li class="menu"><a href="index.html">Blog by Daylight</a></li>
+            <li class="menu"><a href="">Artículos</a>
+                <ul id="lista">
+                    <li><a href="killers.html">Mejores killers</a></li>
+                    <li><a href="supervivientes.html">Mejores survis</a></li>
                     <li><a href="">Otro</a></li>
                 </ul>
             </li>
         </ul>
-        <a href=""></a>
-        <a href=""></a>
-    </div>
+    </nav>
     <div id="contenidoPagina">
         <div id="articulos">
-            <article id="killers">
+            <article class="index">
                 <a href="killers.html">
                     <div class="imagen_articulo">
                         <img src="killer.jpg" name="Killer">
@@ -49,24 +44,25 @@
                     </div>
                 </a>
             </article>
-            <form method="post">
-                <button type="button" onclick="siguiente()">Siguiente Imagen</button>
-            </form>
-            <article id="survis">
-                <a href="">
+            <article class="index">
+                <a href="supervivientes.html">
                     <div class="imagen_articulo">
                         <img src="survii.webp">
                     </div>
                     <div class="contenido">
-                        <h3>Los mejores streamers como supervivientes</h3>
+                        <h3>Los mejores supervivientes de habla hispana</h3>
                         <p>Todos podeen estilos de juego diferentes, y hay tantos estilos como jugadores, ya sea más agresivos,
                             más centrados en la estrategia, ninjas o simplemente novatos. Los mejores de habla hispana se encuentran
-                            aquí
+                            aquí.
                         </p>
                     </div>
                 </a>
             </article>
-            </a>
+            <article>
+                <a href="">
+                    <h1>Suscríbase para ser notificado cuando subamos un nuevo artículo</h1>
+                </a>
+            </article>
         </div>
         <div class="videos">
             <p>Videos recomendados</p>
@@ -79,8 +75,6 @@
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/3juOhPBsT18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/_k1wZT_uh-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
         </div>
     </div>
     <footer>

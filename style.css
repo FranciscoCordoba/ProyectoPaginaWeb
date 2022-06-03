@@ -7,6 +7,7 @@ body{
 #movil a, footer a{
     text-decoration: none;
     color: white;
+    transition: 0.2s;
 }
 
 header{
@@ -37,24 +38,58 @@ header h2{
     height: 100px;
 }
 
+#lista{
+    margin: 5px 0px;
+    padding: 0px;
+}
+
 #movil{
-    display: flex;
     background-color: rgb(0, 0, 0);
+    margin: 0;
     padding: 0.5rem;
+    list-style: none;
     position: sticky;
-    top: 0;
     z-index: 2;
-    color: aliceblue;
 }
 
-ul, li{
-    list-style-type: none;
-    margin: 0px;
-    display: flex;
+#movil > li{
+    padding: 5px;
 }
 
-li{
-    margin-left: 10px;
+.menu{
+    position: relative;
+    display:inline-block;
+}
+
+.menu a{
+    padding-left: 5px;
+}
+
+#movil a:hover{
+    color: rgb(204, 204, 204);
+}
+
+#lista{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: rgb(17, 31, 58);
+    width: 200%;
+    transition: 0.3s;
+}
+
+#lista li a{
+    display: block;
+    padding: 15px 0px 15px 5px;
+}
+
+#movil li:hover #lista{
+    display: block;
+    z-index: 100;
+}
+
+#lista li:hover{
+    background-color: rgb(8, 15, 29);;
 }
 
 #articulos{
@@ -62,7 +97,6 @@ li{
     padding: 2px;
     margin: 1rem;
     z-index: 1;
-    width: 70%;
     border-radius: 10px;
 }
 
@@ -74,12 +108,19 @@ article{
     border-radius: 5px;
 }
 
-article:hover{
+.index:hover{
     box-shadow: 0rem 0.1rem 0.3rem rgba(255, 255, 255, 0.3);
     opacity: 80%;
 }
 
-article img{
+h1{
+    background-color: beige;
+    display:inline-block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.index img{
     width: 250px;
     height: 150px;
 }
@@ -89,6 +130,14 @@ article a{
     color: black;
     display: flex;
     align-items: center;
+}
+
+.killers h2{
+    margin-top: 0px;
+}
+
+.killers p{
+    font-size:large;
 }
 
 .contenido{
@@ -115,3 +164,4 @@ footer{
     padding: 3rem;
     color: aliceblue;
 }
+
