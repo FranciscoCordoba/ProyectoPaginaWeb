@@ -6,6 +6,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c301f408e9.js" crossorigin="anonymous"></script>
+    <script src="codigo.js"></script>
     <title>Asesinos</title>
 </head>
 <body>
@@ -30,7 +32,10 @@
     <h1>TOP: Los 5 mejores asesinos de Dead by Daylight</h1>
     <article class="killers">    
         <h2>Puesto 5: Oni</h2>
-        <img src="ONI.jpg">
+        <div class="carrusel">
+            <img src="ONI.jpg">
+            <button type="button" id="boton1" onclick="siguiente(0)"><i class="fa-solid fa-angles-right"></i></button>
+        </div>
         <p>
             Kazan Yamaoka buscó devolver la gloria a la cultura samurái y se embarcó en un oscuro 
             peregrinaje para librar a Japón de impostores. 
@@ -50,7 +55,10 @@
     </article>
     <article class="killers">    
         <h2>Puesto 4: La Espíritu</h2>
-        <img src="ESPIRITU.jpg">
+        <div class="carrusel">
+            <img src="ESPIRITU.jpg">
+            <button type="button" id="boton2" onclick="siguiente(3)"><i class="fa-solid fa-angles-right"></i></button>
+        </div>
         <p>
             Rin Yamaoka llegó a casa y encontró pedazos de su madre esparcidos por el suelo. 
             Le cortaron las extremidades, le abrieron el pecho para revelar una caja torácica rota. 
@@ -70,7 +78,10 @@
     </article>
     <article class="killers">    
         <h2>Puesto 3: El Deterioro</h2>
-        <img src="DETERIORO.jpg">
+        <div class="carrusel">
+            <img src="DETERIORO.jpg">
+            <button type="button" id="boton3" onclick="siguiente(6)"><i class="fa-solid fa-angles-right"></i></button>
+        </div>
         <p>
             Para comprender la condición humana, uno debe elevarse por encima de ella. 
             Talbot Grimes fue un químico escocés cuya ambición desenfrenada lo elevó a alturas imponentes y mínimos 
@@ -90,7 +101,10 @@
     </article>
     <article class="killers">    
         <h2>Puesto 2: La Enfermera</h2>
-        <img src="ENFERMERA.jpg">
+        <div class="carrusel">
+            <img src="ENFERMERA.jpg">
+            <button type="button" id="boton4" onclick="siguiente(9)"><i class="fa-solid fa-angles-right"></i></button>
+        </div>
         <p>
             Con un esposo fallecido y sin medios para mantenerse, Sally Smithson se vio obligada a tomar el 
             único trabajo que podía: enfermera en el Asilo Crotus Prenn. 
@@ -109,7 +123,10 @@
     </article>
     <article class="killers">    
         <h2>Puesto 1: El Trampero</h2>
-        <img src="TRAMPERO.jpg">
+        <div class="carrusel">
+            <img src="TRAMPERO.jpg">
+            <button type="button" id="boton5" onclick="siguiente(12)"><i class="fa-solid fa-angles-right"></i></button>
+        </div>
         <p>
             Evan MacMillan admiraba la forma en que su padre dirigía la finca. 
             Cuando la salud mental de Archie MacMillan comenzó a desintegrarse, 

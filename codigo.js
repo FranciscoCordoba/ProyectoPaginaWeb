@@ -1,16 +1,43 @@
-var posicion = 0;
+var contador = 0;
+var oni = 0;
+var espiritu = 0;
+var deterioro = 0;
+var enfermera = 0;
+var trampero = 0;
 
-function siguiente(){
-    if(posicion < 2){
-        posicion += 1;
-    }else{
-        posicion = 0;
+function siguiente(num){
+
+    switch(num){
+        case 0: {(oni < 2) ? oni += 1 : oni = 0; 
+            contador = oni;};break;
+        case 3: {(espiritu < 2) ? espiritu += 1 : espiritu = 0; 
+            contador = espiritu;};break;
+        case 6: {(deterioro < 2) ? deterioro += 1 : deterioro = 0; 
+            contador = deterioro;};break;
+        case 9: {(enfermera < 2) ? enfermera += 1 : enfermera = 0; 
+            contador = enfermera;};break;
+        case 12: {(trampero < 2) ? trampero += 1 : trampero = 0; 
+            contador = trampero;};break;
     }
+
     imagen = new Array;
-    imagen[0]="killer.jpg";
-    imagen[1]="survii.webp";
-    imagen[2]="ONI.jpg";
-    document.Killer.src = imagen[posicion];
+    imagen[0]="ONI.jpg";
+    imagen[1]="ONI2.jpg";
+    imagen[2]="ONI3.jpg";
+    imagen[3]="ESPIRITU.jpg";
+    imagen[4]="ESPIRITU2.jpg";
+    imagen[5]="ESPIRITU3.jpg";
+    imagen[6]="DETERIORO.jpg";
+    imagen[7]="DETERIORO2.jpg";
+    imagen[8]="DETERIORO3.jpg";
+    imagen[9]="ENFERMERA.jpg";
+    imagen[10]="ENFERMERA2.jpg";
+    imagen[11]="ENFERMERA3.jpg";
+    imagen[12]="TRAMPERO.jpg";
+    imagen[13]="TRAMPERO2.jpg";
+    imagen[14]="TRAMPERO3.jpg";
+
+    document.querySelectorAll(".carrusel img")[(num/3)].src = imagen[(contador + num)];
 }
 
 function enviar(){
@@ -102,5 +129,4 @@ function enviar(){
     }
 
     return false;
-
 }

@@ -179,6 +179,25 @@ footer a{
     color: aliceblue;
 }
 
+.carrusel{
+    display: flex;
+    align-items: center;
+}
+
+.carrusel button{
+    border-style: none;
+    background: none;
+    transition: 0.3s;
+}
+
+.carrusel button:hover{
+    color: rgba(50, 50, 50);
+}
+
+.carrusel i{
+    font-size: 80px;
+}
+
 /* ESTILO FORMULARIO */
 
 #formularioDiv{
