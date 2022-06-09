@@ -1,8 +1,10 @@
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
-    background-image: url(fondo.webp);
-    background-repeat: repeat;
+    background-image: url('fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 #movil a, footer a{
     text-decoration: none;
@@ -12,7 +14,7 @@ body{
 
 header{
     display: flex;
-    background-color: rgba(7, 8, 24, 0.9);
+    background-color: rgba(7, 8, 24, 0.95);
     padding: 1rem;
     justify-content:space-between;
     align-items: center;
@@ -21,7 +23,7 @@ header{
 header img{
     width: 400px;
     height: 100px;
-    opacity: 70%;
+    opacity: 80%;
 }
 
 header h2{
@@ -48,7 +50,6 @@ header h2{
     margin: 0;
     padding: 0.5rem;
     list-style: none;
-    position: sticky;
     z-index: 2;
 }
 
@@ -101,7 +102,7 @@ header h2{
 }
 
 article{
-    opacity: 85%;
+    opacity: 92%;
     background-color: beige;
     padding: 1rem;
     margin: 1rem;
