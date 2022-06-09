@@ -178,3 +178,45 @@ footer a{
     text-decoration: none;
     color: aliceblue;
 }
+
+/* ESTILO FORMULARIO */
+
+#formularioDiv{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    margin: 10% 30%;
+}
+
+#formularioDiv h2{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.input_form{
+    display: flex;
+    margin: 5px;
+}
+
+.textoError{
+    margin: 0px 5px;
+    color: darkred;
+    text-shadow: 1px 1px 1px darksalmon;
+}
+
+.inputError{
+    border: 1px solid red;
+}
+
+#f_submit{
+    margin: 1rem 0px;
+}
+
+#suscripciones{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#suscripciones p{
+    margin: 10px 5px;
+}

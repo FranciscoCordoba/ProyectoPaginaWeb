@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript" src="codigo.js"></script>
+    <title>Suscripción</title>
+</head>
+<body>
+    <header>
+        <div id="fondo_img">
+            <img src="HeaderImage.jpg">
+        </div>
+        <h2>Web blog de Dead by Daylight</h2>
+    </header>
+    <nav>
+        <ul id="movil">
+            <li class="menu"><a href="index.html">Blog by Daylight</a></li>
+            <li class="menu"><a href="index.html#articulos">Artículos</a>
+                <ul id="lista">
+                    <li><a href="killers.html">Mejores killers</a></li>
+                    <li><a href="supervivientes.html">Mejores survis</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="form.html">Suscribirse</a></li>
+        </ul>
+    </nav>
+
+    <div id="formularioDiv">
+        <h2>Suscripción al sitio</h2>
+        <form onsubmit="return enviar()" method="post" id="formulario">
+            <div class="input_form">
+                <input type="text" name="f_nombre" id="f_nombre" placeholder="Nombre" maxlength="20">
+                <div id="textoError1"></div>
+            </div>
+
+            <div class="input_form">
+                <input type="text" name="f_apellido" id="f_apellido" placeholder="Apellido" maxlength="20">
+                <div id="textoError2"></div>
+            </div>
+
+            <div class="input_form">
+                <input type="text" name="f_correo" id="f_correo" placeholder="Correo Electrónico" maxlength="100">
+                <div id="textoError3"></div>
+            </div>
+
+            <div class="input_form">
+                <input type="submit" value="Enviar" id="f_submit">
+            </div>
+        </form>
+
+        <div id="suscripciones"></div>
+
+    </div>
+    <footer>
+        <p>Mucha de la información recopilada fue sacada diréctamente de la página oficial de Dead By Daylight.</p>
+        <p>Creador del sitio web: Francisco León Córdoba</p>
+        <a href="mailto:franciscoleon45@gmail.com">Contáctame</a>
+    </footer>
+</body>
+</html>
