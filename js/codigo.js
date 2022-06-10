@@ -21,21 +21,21 @@ function siguiente(num){
     }
 
     imagen = new Array;
-    imagen[0]="ONI.jpg";
-    imagen[1]="ONI2.jpg";
-    imagen[2]="ONI3.jpg";
-    imagen[3]="ESPIRITU.jpg";
-    imagen[4]="ESPIRITU2.jpg";
-    imagen[5]="ESPIRITU3.jpg";
-    imagen[6]="DETERIORO.jpg";
-    imagen[7]="DETERIORO2.jpg";
-    imagen[8]="DETERIORO3.jpg";
-    imagen[9]="ENFERMERA.jpg";
-    imagen[10]="ENFERMERA2.jpg";
-    imagen[11]="ENFERMERA3.jpg";
-    imagen[12]="TRAMPERO.jpg";
-    imagen[13]="TRAMPERO2.jpg";
-    imagen[14]="TRAMPERO3.jpg";
+    imagen[0]="img/ONI.jpg";
+    imagen[1]="img/ONI2.jpg";
+    imagen[2]="img/ONI3.jpg";
+    imagen[3]="img/ESPIRITU.jpg";
+    imagen[4]="img/ESPIRITU2.jpg";
+    imagen[5]="img/ESPIRITU3.jpg";
+    imagen[6]="img/DETERIORO.jpg";
+    imagen[7]="img/DETERIORO2.jpg";
+    imagen[8]="img/DETERIORO3.jpg";
+    imagen[9]="img/ENFERMERA.jpg";
+    imagen[10]="img/ENFERMERA2.jpg";
+    imagen[11]="img/ENFERMERA3.jpg";
+    imagen[12]="img/TRAMPERO.jpg";
+    imagen[13]="img/TRAMPERO2.jpg";
+    imagen[14]="img/TRAMPERO3.jpg";
 
     document.querySelectorAll(".carrusel img")[(num/3)].src = imagen[(contador + num)];
 }
